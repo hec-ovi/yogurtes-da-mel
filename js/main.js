@@ -2,7 +2,7 @@
   var toggle = document.querySelector(".nav-toggle");
   var menu = document.querySelector("#menu");
   var year = document.querySelector("#year");
-  var mq = window.matchMedia("(max-width: 800px)");
+  var mq = window.matchMedia("(max-width: 1040px)");
 
   if (year) year.textContent = String(new Date().getFullYear());
 

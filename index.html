@@ -17,7 +17,8 @@
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="images/icon-180.png">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="preload" as="image" href="images/capa.webp" type="image/webp" fetchpriority="high">
+    <link rel="preload" as="image" href="logos/logo.webp" type="image/webp" fetchpriority="high">
+    <link rel="preload" as="image" href="images/capa.webp" type="image/webp">
     <link rel="stylesheet" href="css/styles.css">
     <script type="application/ld+json">
       {
@@ -86,10 +87,15 @@
 
     <main id="conteudo">
       <section class="hero" id="inicio">
-        <div class="wrap hero-grid">
+        <div class="hero-layout">
+          <h1 class="hero-logo">
+            <picture>
+              <source srcset="logos/logo.webp" type="image/webp">
+              <img src="logos/logo.png" width="960" height="962" alt="Yogurtes da Mel" fetchpriority="high">
+            </picture>
+          </h1>
           <div class="hero-copy">
             <p class="eyebrow">Luanda · Yogurte artesanal</p>
-            <h1>Yogurtes da Mel</h1>
             <p class="tagline">Porque o melhor é natural.</p>
             <p class="lede">Bem-vindo à Yogurtes da Mel. Temos três opções para tornar o seu dia mais saboroso: simples, maracujá e granola.</p>
             <div class="actions">
@@ -97,14 +103,14 @@
               <a class="btn btn-ghost" href="#produtos">Ver yogurtes</a>
             </div>
           </div>
-          <figure class="hero-photo">
-            <picture>
-              <source srcset="images/capa.webp" type="image/webp">
-              <img src="images/capa.jpg" width="1280" height="720" alt="Três frascos de yogurte natural da Mel: simples, maracujá e granola, sobre uma mesa de linho." fetchpriority="high">
-            </picture>
-            <figcaption class="chip">Feito em Luanda</figcaption>
-          </figure>
         </div>
+        <figure class="hero-photo">
+          <picture>
+            <source srcset="images/capa.webp" type="image/webp">
+            <img src="images/capa.jpg" width="1280" height="720" alt="Três frascos de yogurte natural da Mel: simples, maracujá e granola, sobre uma mesa de linho.">
+          </picture>
+          <figcaption class="chip">Feito em Luanda</figcaption>
+        </figure>
       </section>
 
       <section class="section" id="marca" aria-labelledby="marca-titulo">
@@ -268,20 +274,15 @@
     </main>
 
     <footer class="site-footer">
+      <div class="wrap footer-logo">
+        <picture>
+          <source srcset="logos/logo.webp" type="image/webp">
+          <img src="logos/logo.png" width="960" height="962" alt="Logotipo Yogurtes da Mel">
+        </picture>
+      </div>
       <div class="wrap footer-grid">
-        <div>
-          <p class="footer-brand">
-            <picture>
-              <source srcset="logos/logo.webp" type="image/webp">
-              <img src="logos/logo.png" width="960" height="962" alt="Logotipo Yogurtes da Mel">
-            </picture>
-          </p>
-          <p class="footer-note">Yogurte artesanal em Luanda.</p>
-        </div>
-        <div>
-          <p>Rua do Kamorteiro, Bairro Danger, Luanda</p>
-          <p class="footer-note">Segunda a sábado · Talatona, Camama e Patriota</p>
-        </div>
+        <p>Rua do Kamorteiro, Bairro Danger, Luanda</p>
+        <p class="footer-note">Yogurte artesanal · Segunda a sábado<br>Talatona, Camama e Patriota</p>
         <a class="btn btn-ghost" href="https://wa.me/244940658890?text=Ol%C3%A1%2C%20Yogurtes%20da%20Mel!%20Gostaria%20de%20fazer%20uma%20encomenda.">WhatsApp</a>
       </div>
       <p class="legal">© <span id="year">2026</span> Yogurtes da Mel</p>
