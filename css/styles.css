@@ -377,7 +377,8 @@ h1 {
 }
 
 .portrait img {
-  aspect-ratio: 1;
+  aspect-ratio: 4 / 5;
+  object-position: center 18%;
   border-radius: var(--radius);
 }
 
