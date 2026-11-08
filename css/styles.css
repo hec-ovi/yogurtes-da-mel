@@ -176,12 +176,19 @@ a {
   gap: 0.7rem;
   text-decoration: none;
   margin-right: auto;
+  min-width: 0;
+}
+
+.brand picture {
+  display: flex;
+  flex: none;
 }
 
 .brand img {
-  width: 42px;
-  height: 42px;
-  flex: none;
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  box-shadow: 0 0 0 1px rgba(36, 28, 22, 0.08);
 }
 
 .brand-name {
@@ -633,19 +640,17 @@ h2 {
 }
 
 .footer-brand {
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-  font-family: "Fraunces", Georgia, serif;
-  font-size: 1.6rem;
-  font-weight: 560;
-  letter-spacing: -0.03em;
+  margin: 0;
+}
+
+.footer-brand picture {
+  display: block;
 }
 
 .footer-brand img {
-  width: 28px;
+  width: min(280px, 100%);
   height: auto;
-  flex: none;
+  border-radius: 1.15rem;
 }
 
 .footer-note {
