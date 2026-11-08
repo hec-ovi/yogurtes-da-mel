@@ -4,6 +4,10 @@ Site da Yogurtes da Mel, yogurte artesanal em Luanda. Três produtos: natural si
 
 O site é HTML, CSS e JavaScript estáticos. Não há base de dados, servidor nem pagamento no site. Os preços, em kwanzas (AOA), confirmam-se na conversa.
 
+![Logotipo Yogurtes da Mel](logos/logo-horizontal.png)
+
+O logotipo está em `logos/`: o horizontal para assinatura, o empilhado para rótulo e perfil, o frasco sozinho e o ícone quadrado. Cores: cacau `#2A211B`, mel `#C9892E`, creme `#F7F1E8`.
+
 ![Três yogurtes da Mel](images/capa.jpg)
 
 ## Publicar de graça

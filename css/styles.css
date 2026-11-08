@@ -178,7 +178,7 @@ a {
   margin-right: auto;
 }
 
-.brand svg {
+.brand img {
   width: 42px;
   height: 42px;
   flex: none;
@@ -632,10 +632,19 @@ h2 {
 }
 
 .footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
   font-family: "Fraunces", Georgia, serif;
   font-size: 1.6rem;
   font-weight: 560;
   letter-spacing: -0.03em;
+}
+
+.footer-brand img {
+  width: 28px;
+  height: auto;
+  flex: none;
 }
 
 .footer-note {
